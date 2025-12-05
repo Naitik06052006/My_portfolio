@@ -15,7 +15,7 @@ h1, h2, h3, h4{
 }
 
 .floating-image {
-  animation: float 6s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
 }
 
 .font-orbitron{

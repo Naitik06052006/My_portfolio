@@ -17,15 +17,15 @@ const Navbar = () => {
                     <div className='hidden md:flex space-x-8 border border-gray-500 rounded-full px-10 py-3'>
                         {
                             navMenu.map((item, index) => (
-                                <NavLink className='hover:text-blue-400' key={index} to={item.path}>{item.name}</NavLink>
+                                <NavLink className='hover:text-blue-400 hover:animate-bounce' key={index} to={item.path}>{item.name}</NavLink>
                             ))
                         }
                     </div>
                     {/* button */}
                     <div className='md:block hidden'>
-                        <NavLink to={"/contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
+                        <NavLink to={"/Contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
                         flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 
-                        hover:translate-y-1 transition duration-300 animate-pulse '>
+                        hover:translate-y-1 transition duration-300 hover:animate-pulse '>
                             Get In Touch
                             <FaArrowRight className='text-gray-500 text-sm' />
                         </NavLink>

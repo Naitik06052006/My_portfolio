@@ -17,7 +17,7 @@ const App = () => {
         <Route path='/About' element={<About/>}/>
         <Route path='/Skills' element={<Skills/>}/>
         <Route path='/Work' element={<Work/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
 
       </Routes>
       <FooterNav/>
