@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Skills from './Components/Skills';
 import Work from './Components/Work';
 import Contact from './Components/Contact';
+import FooterNav from './Components/FooterNav';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/contact' element={<Contact/>}/>
 
       </Routes>
+      <FooterNav/>
     </div>
   )
 }

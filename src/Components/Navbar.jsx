@@ -1,6 +1,6 @@
 import React from 'react'
 import { navMenu } from '../assets/asstes'
-import {FaArrowRight, FaGithub} from 'react-icons/fa'
+import { FaArrowRight, FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
                                 <NavLink className='hover:text-blue-400' key={index} to={item.path}>{item.name}</NavLink>
                             ))
                         }
-                    </div>  
+                    </div>
                     {/* button */}
                     <div className='md:block hidden'>
                         <NavLink to={"/contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
@@ -31,8 +31,8 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                     <div className='md:hidden flex gap-2'>
-                        <a href=""><FaLinkedin className='text-2xl'/></a>
-                        <a href=""><FaGithub className='text-2xl'/></a>
+                        <a href=""><FaLinkedin className='text-2xl' /></a>
+                        <a href=""><FaGithub className='text-2xl' /></a>
 
                     </div>
                 </div>
