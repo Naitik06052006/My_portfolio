@@ -36,10 +36,10 @@ const Hero = () => (
                         <img
                             src={assets.profileImg}
                             alt="profile"
-                            className="w-80 h-80 object-cover rounded-2xl shadow-xl floating-image" />
+                            className="w-90 h-90 object-cover rounded-2xl shadow-xl floating-image" />
 
                         {/* bottom badge */}
-                        <div className="absolute bottom-4 right-1 bg-white/80 px-3 py-1 rounded-xl backdrop-blur-md shadow">
+                        <div className="absolute bottom-1 right-1 bg-white/80 px-3 py-1 rounded-xl backdrop-blur-md shadow floating-image">
                             <p className="text-xl font-bold text-center">1+</p>
                             <p className="text-sm text-gray-700">years Exp</p>
                         </div>
