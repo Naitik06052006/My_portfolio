@@ -13,7 +13,7 @@ const Hero = () => (
                         <br />
                         <span className='text-cyan-700'>Python</span>
                     </h1>
-                    <p className='text-l text-zinc-900 mb-6'>
+                    <p className='text-[16px] md:text-xl text-zinc-900 mb-6'>
                         I craft immersive web experience at the intersection of designing and technology.
                     </p>
                     <div className='flex flex-col md:flex-row items-center gap-4'>
