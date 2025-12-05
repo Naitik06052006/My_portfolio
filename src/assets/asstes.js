@@ -9,7 +9,12 @@ export const assets = {
 }
 
 
-export const navMenu = ['Home', 'Work', 'Skills', 'About', 'Contact']
+export const navMenu = [
+  { name: "Home", path: "/" },
+  { name: "Work", path: "/work" },
+  { name: "Skills", path: "/skills" },
+  { name: "About", path: "/about" },
+];
 
 
 export const skillsData = [
