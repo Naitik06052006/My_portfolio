@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div className='md:block hidden'>
                         <NavLink to={"/contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
                         flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 
-                        hover:translate-y-1 transition duration-300 '>
+                        hover:translate-y-1 transition duration-300 animate-pulse '>
                             Get In Touch
                             <FaArrowRight className='text-gray-500 text-sm' />
                         </NavLink>
