@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa6'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
-        <div className='fixed w-full py-2 z-50 backdrop-blur-xs'>
+        <div className='fixed w-full py-2 z-50 backdrop-blur-lg'>
             <div className='max-w-7xl mx-auto px-6'>
                 <div className='flex justify-between items-center'>
                     {/* Logo */}

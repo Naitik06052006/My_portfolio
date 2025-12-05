@@ -20,7 +20,7 @@ const Footer = () => {
                    <FaWhatsapp className="text-green-500 w-8 h-8" />
                    </a>
                 </div>
-                <div className='text-zinc-900 text-sm'>
+                <div className='text-zinc-900 sm:text-sm pb-5'>
                     @ 2025 The-Naitik Developer. All rights reserved
                 </div>
             </div>
