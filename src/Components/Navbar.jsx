@@ -17,7 +17,15 @@ const Navbar = () => {
                     <div className='hidden md:flex space-x-8 border border-gray-500 rounded-full px-10 py-3'>
                         {
                             navMenu.map((item, index) => (
-                                <NavLink className='hover:text-blue-400 hover:animate-bounce' key={index} to={item.path}>{item.name}</NavLink>
+                                <NavLink
+                                    key={index}
+                                    to={item.path}
+                                    className={({ isActive }) =>
+                                        `hover:text-blue-400 ${isActive ? "animate-bounce text-blue-500" : ""}`
+                                    }
+                                >
+                                    {item.name}
+                                </NavLink>
                             ))
                         }
                     </div>
