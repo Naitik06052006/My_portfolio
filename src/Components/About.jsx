@@ -35,7 +35,7 @@ const About = () => {
                     </div>
                     <div className='order-1 lg:order-2 flex justify-center'>
                         <div className='relative w-full max-w-md'>
-                            <div className='rounded overflow-hidden'>
+                            <div className='rounded-4xl overflow-hidden'>
                                 <img className='w-full h-full object-cover' src={assets.profileImg} alt="Profile" />
                             </div>
                         </div>
