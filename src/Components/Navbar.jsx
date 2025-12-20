@@ -39,8 +39,10 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                     <div className='md:hidden flex gap-2'>
-                        <a href=""><FaLinkedin className='text-2xl' /></a>
-                        <a href=""><FaGithub className='text-2xl' /></a>
+                        <a href="https://www.linkedin.com/in/naitik-garg-b99730214/" target="_blank"
+                            rel="noopener noreferrer"><FaLinkedin className='text-2xl' /></a>
+                        <a href="https://github.com/Naitik06052006" target="_blank"
+                            rel="noopener noreferrer"><FaGithub className='text-2xl' /></a>
 
                     </div>
                 </div>

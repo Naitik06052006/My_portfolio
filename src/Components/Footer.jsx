@@ -10,13 +10,13 @@ const Footer = () => {
                     <span className='uppercase text-2xl font-bold'>The-Naitik</span>
                 </div>
                 <div className='flex space-x-6 mb-6 md:mb-0'>
-                    <a href="">
+                    <a href="https://www.facebook.com/naitik.garg.1690" target="_blank" rel="noopener noreferrer">
                    <FaFacebook className="text-blue-500 w-8 h-8" />
                    </a>
-                   <a href="">
+                   <a href="https://www.instagram.com/naitik_._06/" target="_blank" rel="noopener noreferrer"> 
                    <FaInstagram className="text-pink-500 w-8 h-8" />
                    </a>
-                   <a href="">
+                   <a href="https://wa.me/917599966668" target="_blank" rel="noopener noreferrer">
                    <FaWhatsapp className="text-green-500 w-8 h-8" />
                    </a>
                 </div>
