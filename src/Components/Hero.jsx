@@ -12,7 +12,7 @@ const Hero = () => (
                     <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold mb-10'>
                         <span className='text-zinc-700'>MernStack Developer</span>
                         <br />
-                        <span className='text-cyan-700'>Python</span>
+                        <span className='text-cyan-700'>React</span>
                     </h1>
                     <p className='text-[16px] md:text-xl text-zinc-900 mb-6'>
                         I craft immersive web experience at the intersection of designing and technology.
