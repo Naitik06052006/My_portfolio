@@ -21,7 +21,7 @@ export const skillsData = [
     {
         icon: FaMicrochip,
         title: 'Backend',
-        technologies: ['Python', 'Java', 'Next.js']
+        technologies: ['Python', 'Java', 'Node.js']
     },
     {
         icon: FaReact,

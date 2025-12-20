@@ -7,7 +7,8 @@ const Footer = () => {
         <div className='max-w-7xl mx-auto px-6'>
             <div className='flex flex-col md:flex-row items-center justify-between'>
                 <div className='mb-6 md:mb-0'>
-                    <span className='uppercase text-2xl font-bold'>The-Naitik</span>
+                    <span className='uppercase text-2xl font-bold'>The-</span>
+                    <span className='uppercase text-teal-800 text-2xl  font-bold'>Naitik</span>
                 </div>
                 <div className='flex space-x-6 mb-6 md:mb-0'>
                     <a href="https://www.facebook.com/naitik.garg.1690" target="_blank" rel="noopener noreferrer">
