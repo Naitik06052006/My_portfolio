@@ -18,7 +18,7 @@ const Hero = () => (
                         I craft immersive web experience at the intersection of designing and technology.
                     </p>
                     <div className='flex flex-col md:flex-row items-center gap-4'>
-                        <NavLink to={"/Work"} className='flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer'>
+                        <NavLink to={"/work"} className='flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer'>
                             View My Work
                             <FaArrowRight />
                         </NavLink>

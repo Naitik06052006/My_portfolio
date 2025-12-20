@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     {/* button */}
                     <div className='md:block hidden'>
-                        <NavLink to={"/Contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
+                        <NavLink to={"/contact"} className='px-3 py-2 border border-zinc-800 rounded-full 
                         flex items-center gap-2 cursor-pointer text-slate-500 hover:text-slate-800 
                         hover:translate-y-1 transition duration-300 hover:animate-pulse '>
                             Get In Touch
