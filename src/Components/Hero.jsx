@@ -18,14 +18,14 @@ const Hero = () => (
                         I craft immersive web experience at the intersection of designing and technology.
                     </p>
                     <div className='flex flex-col md:flex-row items-center gap-4'>
-                        <button className='flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer'>
+                        <NavLink to={"/work"}  className='flex gap-2 items-center px-10 py-4 bg-black rounded-full text-slate-200 hover:text-white cursor-pointer'>
                             View My Work
                             <FaArrowRight />
-                        </button>
-                        <button className='flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 transition duration-300 cursor-pointer'>
+                        </NavLink>
+                        <NavLink to={"/contact"} className='flex gap-2 items-center border border-slate-400 rounded-full px-10 py-4 hover:border-slate-800 transition duration-300 cursor-pointer'>
                             Contact Me
                             <FaArrowRight />
-                        </button>
+                        </NavLink>
                     </div>
                 </div>
 
