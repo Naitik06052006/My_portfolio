@@ -23,7 +23,7 @@ h1, h2, h3, h4{
 }
 .popup {
   position: fixed;
-  bottom: 20px;
+  top: 50px;
   right: 20px;
   padding: 12px 18px;
   border-radius: 6px;
