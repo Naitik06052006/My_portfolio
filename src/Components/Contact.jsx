@@ -66,7 +66,7 @@ const Contact = () => {
                         </div>
                     </form>
                     {status === "success" && (
-        <div className="popup success">✅ Message sent!</div>
+        <div className="popup success">✅ Thanks For Contact Me!</div>
       )}
 
       {status === "error" && (
