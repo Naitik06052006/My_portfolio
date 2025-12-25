@@ -27,7 +27,7 @@ const Hero = () => {
     // Image animation
     tl.from(picRef.current, {
       scale: 0,
-      rotate: 360,
+    //   rotate: 360,
       opacity: 0,
       duration: 2,
       ease: 'power2.out',
