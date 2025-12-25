@@ -11,52 +11,54 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
 const Hero = () => {
-      const picRef = useRef(null)
-  const badgeRef = useRef(null)
+    const picRef = useRef(null)
+    const badgeRef = useRef(null)
 
-  // GSAP animation
-  useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: picRef.current,
-        start: 'top 85%',
-        toggleActions: "play reverse play reverse"
-      },
-    })
+    // GSAP animation
+    useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: picRef.current,
+                start: 'top 85%',
+                toggleActions: "play reverse play reverse"
+            },
+        })
 
-    // Image animation
-    tl.from(picRef.current, {
-      scale: 0,
-      rotate: 360,
-      opacity: 0,
-      duration: 2,
-      ease: 'power2.out',
-    })
+        // Image animation
+        tl.fromTo(
+            picRef.current,
+            {
+                scale: 0.5,
+                rotate: 0,
+                opacity: 0,
+            },
+            {
+                scale: 1,
+                rotate: 360,
+                opacity: 1,
+                duration: 1.5,
+                ease: 'power2.out',
+            }
+        )
+        // badge
+        tl.fromTo(
+            badgeRef.current,
+            {
+                y: 50,
+                opacity: 0,
+                scale: 0.8,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: 'back.out(1.7)',
+            },
+            '-=0.3'
+        )
+    }, [])
 
-    // Badge animation slightly after image
-    tl.from(badgeRef.current, {
-      y: 50,           // moves up 20px
-      opacity: 0,      // fades in
-      scale: 0,      // slight pop effect
-      duration: 1,
-      ease: 'back.out(1.7)',
-    }, '-=0.3')       // overlap slightly with image animation
-  }, [])
-    // const picRef = useRef()
-
-    // useGSAP(() => {
-    //     gsap.from(picRef.current, {
-    //         scale: 0,
-    //         rotate: 360,
-    //         opacity: 0,
-    //         duration: 1.2,
-    //         scrollTrigger: {
-    //             trigger: picRef.current,
-    //             start: "top 85%",
-    //             toggleActions: "play reverse play reverse",
-    //         },
-    //     })
-    // })
     return (
         <div id='home' className='min-h-screen flex items-center pt-16'>
             <div className='max-w-7xl mx-auto px6 py-20'>
@@ -83,7 +85,7 @@ const Hero = () => {
                     </div>
 
                     {/* Image-Section on right */}
-                    <section ref={picRef} className="flex items-center justify-center px-10 py-20">
+                    <section ref={picRef} className="flex items-center justify-center px-10 py-20 overflow-hidden">
 
                         {/* Floating Image */}
                         <div className="relative">
