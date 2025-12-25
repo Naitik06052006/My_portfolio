@@ -121,7 +121,7 @@ const About = () => {
                 ease: 'power3.out',
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: 'top 50%',
+                    start: 'top 20%',
                     end: 'bottom 20%',
                     //   markers: true,
                     //   once: true,
