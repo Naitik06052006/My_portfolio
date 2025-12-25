@@ -58,7 +58,7 @@ const Hero = () => {
     //     })
     // })
     return (
-        <div id='home' className='min-h-screen flex items-center pt-16'>
+        <div id='home' className='flex items-center pt-16 min-h-[85svh] lg:min-h-screen'>
             <div className='max-w-7xl mx-auto px6 py-20'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
                     <div className='text-center lg:text-left'>
@@ -83,6 +83,7 @@ const Hero = () => {
                     </div>
 
                     {/* Image-Section on right */}
+                    <div className="overflow-hidden">
                     <section ref={picRef} className="flex items-center justify-center px-10 py-20">
 
                         {/* Floating Image */}
@@ -99,6 +100,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </section>
+                    </div>
                 </div>
             </div>
         </div>
