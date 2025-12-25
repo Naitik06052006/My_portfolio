@@ -58,6 +58,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
   const sectionRef = useRef(null)
+  const imgRef = useRef(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -120,7 +121,7 @@ const About = () => {
         duration: 1,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: sectionRef.current,
+          trigger: imgRef.current,
           start: 'top 20%',
           end: 'bottom 20%',
         //   markers: true,
@@ -180,7 +181,7 @@ const About = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="about-image flex justify-center">
+          <div ref={imgRef} className="about-image flex justify-center">
             <div className="w-full max-w-md rounded-3xl overflow-hidden">
               <img
                 src={assets.profileImg}
