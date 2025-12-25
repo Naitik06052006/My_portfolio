@@ -182,7 +182,7 @@ const About = () => {
                     {/* RIGHT IMAGE */}
                     <div className="about-image flex justify-center">
                         <div className="w-full max-w-md rounded-3xl overflow-hidden">
-                            <img
+                            <img 
                                 src={assets.profileImg}
                                 alt="Profile"
                                 className="w-full h-full object-cover"
