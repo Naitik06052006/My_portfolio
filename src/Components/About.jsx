@@ -69,8 +69,9 @@ const About = () => {
                 ease: 'power3.out',
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: 'top 20%',
+                    start: 'top 60%',
                     end: 'bottom 20%',
+                    // markers: true, 
                     toggleActions: "play reverse play reverse"
                     //   once: true,
 
@@ -84,8 +85,9 @@ const About = () => {
                 stagger: 0.2,
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: 'top 20%',
+                    start: 'top 50%',
                     end: 'bottom 20%',
+                    // markers: true,
                     //   once: true,
                     toggleActions: "play reverse play reverse"
                 },
