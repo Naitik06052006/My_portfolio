@@ -123,7 +123,7 @@ const About = () => {
           trigger: sectionRef.current,
           start: 'top 20%',
           end: 'bottom 20%',
-          markers: true,
+        //   markers: true,
         //   once: true,
         toggleActions: "play reverse play reverse"
         },
