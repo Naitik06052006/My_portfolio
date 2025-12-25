@@ -2,9 +2,30 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { assets } from '../assets/asstes'
 import { NavLink } from 'react-router-dom'
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 
-const Hero = () => (
+const Hero = () => {
+       const picRef = useRef()
+    useGSAP(() => {
+        gsap.from(picRef.current, {
+            scale: 0,
+            rotate: 360,
+            opacity: 0,
+            duration: 1.2,
+            scrollTrigger: {
+                trigger: picRef.current,
+                start: "top 85%",
+                toggleActions: "restart none restart none",
+            },
+        })
+    })
+    return (
     <div id='home' className='min-h-screen flex items-center pt-16'>
         <div className='max-w-7xl mx-auto px6 py-20'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
@@ -30,7 +51,7 @@ const Hero = () => (
                 </div>
 
                 {/* Image-Section on right */}
-                <section className="flex items-center justify-center px-10 py-20">
+                <section ref={picRef} className="flex items-center justify-center px-10 py-20">
 
                     {/* Floating Image */}
                     <div className="relative">
@@ -50,5 +71,6 @@ const Hero = () => (
         </div>
     </div>
 )
+}
 
 export default Hero
