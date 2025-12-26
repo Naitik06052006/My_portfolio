@@ -8,6 +8,7 @@ const About = () => {
 
 
     return (
+        <div id='About' className='py-20'>
         <section className="py-20 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -96,6 +97,8 @@ const About = () => {
                 </div>
             </div>
         </section>
+        </div>
+
     )
 }
 
