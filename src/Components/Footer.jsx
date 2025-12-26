@@ -1,6 +1,10 @@
 import React from 'react'
-import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from 'react-icons/fa6';
+import { FaFacebook, FaLinkedin, FaTwitter,FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/all';
+
 const Footer = () => {
     return (
     <div className='py-12 border-t border-zinc-200'>
