@@ -1,16 +1,31 @@
+
+
 import React from 'react'
 import { skillsData } from '../assets/asstes'
+import { motion } from "framer-motion";
 
 const Skills = () => {
     return (
         <div id='skills' className='py-20'>
             <div className='max-w-7xl mx-auto px-6'>
+                <motion.div 
+                                initial={{ opacity: 0, y: 50 }} 
+                                whileInView={{ opacity: 1, y: 0 }} 
+                                transition={{ duration: 1, ease: "easeOut" }} 
+                                viewport={{ once: false }} >
                 <div className='text-center mb-16'>
                     <h2 className='text-4xl sm:text-5xl font-bold mb-6'>
                          <span className='text-teal-500'>Technical</span>Skills
                     </h2>
                     <p className='text-xl mb-6 max-w-3xl mx-auto'>Matering the tools that power modern web experience</p>
                 </div>
+                </motion.div>
+                <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.2 }}
+                                    whileHover={{ scale: 1.05 }}>
                 <div className='grid grid-cols-1 md:grid-cols-5 gap-6'>
                     {
                         skillsData.map((skillsData, index) =>(
@@ -26,6 +41,7 @@ const Skills = () => {
                         ))
                     }
                 </div>
+                </motion.div>
             </div>
         </div>
     )
