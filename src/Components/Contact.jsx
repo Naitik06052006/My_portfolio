@@ -9,10 +9,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_cform1",       
-        "template_809k7ao",     
+        "service_cform1",       // ✅ service ID
+        "template_809k7ao",     // ✅ template ID
         e.target,
-        "zRh0_VGSbpptXo8IJ"     
+        "zRh0_VGSbpptXo8IJ"     // ✅ public key
       )
       .then(() => {
         setStatus("success");
