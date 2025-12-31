@@ -56,7 +56,7 @@ const Navbar = () => {
 
                     </NavLink>
                     {/* Menu */}
-                    <div className='hidden md:flex space-x-8 border border-gray-500 rounded-full px-10 py-3'>
+                    <div className='hidden md:flex space-x-8 border border-gray-500 rounded-full px-4 md:px-10 py-3'>
                         {
                             navMenu.map((item, index) => (
                                 <NavLink

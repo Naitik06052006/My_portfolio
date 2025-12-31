@@ -42,21 +42,6 @@ const Hero = () => {
       ease: 'back.out(1.7)',
     }, '-=0.3')       // overlap slightly with image animation
   }, [])
-    // const picRef = useRef()
-
-    // useGSAP(() => {
-    //     gsap.from(picRef.current, {
-    //         scale: 0,
-    //         rotate: 360,
-    //         opacity: 0,
-    //         duration: 1.2,
-    //         scrollTrigger: {
-    //             trigger: picRef.current,
-    //             start: "top 85%",
-    //             toggleActions: "play reverse play reverse",
-    //         },
-    //     })
-    // })
     return (
         <div id='home' className='flex items-center pt-16 min-h-[85svh] lg:min-h-screen'>
             <div className='max-w-7xl mx-auto px6 py-20'>

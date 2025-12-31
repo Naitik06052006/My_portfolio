@@ -48,7 +48,7 @@ const Contact = () => {
                     <form className='space-y-6' onSubmit={sendEmail}>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                             <motion.div
-                                initial={{ opacity: 0, x: -100 }}
+                                initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 viewport={{ once: false }} >
@@ -58,7 +58,7 @@ const Contact = () => {
                                 </div>
                             </motion.div>
                             <motion.div
-                                initial={{ opacity: 0, x: 100 }}
+                                initial={{ opacity: 0, x: 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 viewport={{ once: false }} >
@@ -69,7 +69,7 @@ const Contact = () => {
                             </motion.div>
                         </div>
                         <motion.div
-                            initial={{ opacity: 0, y: 100 }}
+                            initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: "easeOut" }}
                             viewport={{ once: false }} >
@@ -79,7 +79,7 @@ const Contact = () => {
                             </div>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, y: 100 }}
+                            initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: "easeOut" }}
                             viewport={{ once: false }} >
@@ -96,7 +96,6 @@ const Contact = () => {
                                 whileHover="hover"
                                 whileTap={{
                                     scale: 0.95,
-                                    boxShadow: "0 0 0 15px rgba(59,130,246,0)",
                                 }} >
                                 <span>Send Message</span>
                                 <motion.span

@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className='py-12 border-t border-zinc-200'>
             <div className='max-w-7xl mx-auto px-6'>
-                <div className='flex flex-col md:flex-row items-center justify-between'>
+                <div className='flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0'>
                     {/* 🔥 Animated Logo */}
                     <motion.div
                         className="mb-6 md:mb-0 flex text-2xl font-bold uppercase"
@@ -51,17 +51,17 @@ const Footer = () => {
                     </motion.div>
 
                     <div className='flex space-x-6 mb-6 md:mb-0'>
-                        <a href="https://www.facebook.com/naitik.garg.1690" target="_blank" >
+                        <a href="https://www.facebook.com/naitik.garg.1690" target="_blank" rel="noopener noreferrer" >
                             <FaFacebook className="text-blue-500 w-8 h-8" />
                         </a>
-                        <a href="https://www.instagram.com/naitik_._06/" target="_blank" >
+                        <a href="https://www.instagram.com/naitik_._06/" target="_blank" rel="noopener noreferrer" >
                             <FaInstagram className="text-pink-500 w-8 h-8" />
                         </a>
-                        <a href="https://wa.me/917599966668" target="_blank" >
+                        <a href="https://wa.me/917599966668" target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp className="text-green-500 w-8 h-8" />
                         </a>
                     </div>
-                    <div className="text-zinc-900 sm:text-sm text-center pb-5">
+                    <div className="text-zinc-900 sm:text-sm text-center pb-4">
                         © 2025 The-Naitik Developer. <span className="block sm:inline">All rights reserved</span>
                     </div>
                 </div>
