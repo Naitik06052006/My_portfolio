@@ -36,8 +36,7 @@ const Navbar = () => {
                         className="flex text-2xl font-bold uppercase"
                         variants={container}
                         initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: false }}
+                        animate="show"
                     >
                         {text.split("").map((char, index) => (
                             <motion.span
